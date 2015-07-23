@@ -20,7 +20,7 @@ angular.module('personalResumeApp')
 			url: 'https://api.postmarkapp.com/email',
 			method: 'POST',
 			data: {
-				'From': 'contact@gonzalozunino.com.ar',
+				'From': 'contact@gonzalozunino.net46.net',
 				'To': 'gonzalo.zunino@gmail.com',
 				'ReplyTo' : $scope.msg.email,
 				'Subject': $scope.msg.subject,
