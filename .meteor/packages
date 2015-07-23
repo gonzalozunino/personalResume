@@ -13,4 +13,4 @@ twbs:bootstrap
 angularui:angular-ui-bootstrap
 mquandalle:bower
 fortawesome:fontawesome
-bootswatch:paper
+bootswatch:yeti
