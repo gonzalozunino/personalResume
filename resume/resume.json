@@ -10,14 +10,15 @@
             "street": "Rodriguez Peña",
             "housenumber": 247,
             "zipcode": "5000",
-            "city": "Córdoba (capital)",
+            "state": "Córdoba",
+            "city": "Córdoba",
             "country": "Argentina",
             "planet": "Earth"
         }
     },
     "contact_details": {
         "email": "gonzalo.zunino@gmail.com",
-        "phone": "3512141417",
+        "phone": "+54 9 351 2141417",
         "skype": "zunino.gonzalo",
         "website": "http://gonzalozunino.com.ar/",
         "twitter": "http://twitter.com/gonezunino",

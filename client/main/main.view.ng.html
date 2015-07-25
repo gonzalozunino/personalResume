@@ -1,33 +1,33 @@
-<div id="profile" class="profile animated bounceInLeft">
+<div id="profile" class="profile animated bounceIn">
   <h2>Profile</h2>
   <p class="lead">I'm a creative Web UI Developer</p>
 
   <hr>
 
   <div class="row">
-    <div class="col-md-6 text-center">
-      <!-- <img class="img-circle" src="gonzalozunino.png" alt="I'm Gonzalo Zunino" width="250" height="250"> -->
-      <!-- <p> Insert Pic Here!</p>-->
-    </div>
-      
-    <div class="col-md-6">      
-      <p>
-      <strong>Name:</strong><br>
-      {{resume.profile.first_name}} {{resume.profile.last_name}}<br>
-      <strong>Date of birth:</strong><br>
-      {{resume.profile.date_of_birth}}<br>
-      <strong>Age:</strong><br>
-      {{getAge(resume.profile.date_of_birth)}}<br>
-      <strong>Location:</strong><br>
-      {{resume.profile.current_location.city}}, {{resume.profile.current_location.country}}
-      </p>
+    <div class="wrap col-xs-12 text-xs-center col-sm-5 text-sm-right">
+      <img class="img-circle" src="gonzalozunino.jpg" alt="I'm Gonzalo Zunino" width="200" height="200">
     </div>
     
-    <div class="col-md-12">
-      <h3>About me</h3>
-      <p>
+    <div class="col-xs-12 text-xs-center col-sm-7 text-sm-left">
+      <p class="wrap">
+        <strong>Name:</strong><br>
+        {{resume.profile.first_name}} {{resume.profile.middle_names}} {{resume.profile.last_name}}<br>
+        <strong>Age:</strong><br>
+        {{getAge(resume.profile.date_of_birth)}}<br>
+        <strong>Phone:</strong><br>
+        {{resume.contact_details.phone}}<br>
+        <strong>Location:</strong><br>
+        {{resume.profile.current_location.state}}, {{resume.profile.current_location.city}}, {{resume.profile.current_location.country}}<br>
+      </p>
+    </div>
+       
+    <div class="col-xs-12 text-xs-center col-sm-12 text-sm-left">      
+      <p class="wrap">
+        <strong>About me</strong><br>
         {{resume.profile.biography}}
       </p>      
     </div>
-  </div>  
+  </div>
+
 </div>
