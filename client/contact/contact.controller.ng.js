@@ -10,20 +10,14 @@ angular.module('personalResumeApp')
 
 	$scope.send = function () {
 
-		var htmlBody = '<div>Name: ' + $scope.msg.name + '</div>' +					   
-					   '<div>Message: ' + $scope.msg.body + '</div>' +
-					   '<div>Date: ' + (new Date()).toString() + '</div>';
+		var htmlBody = '<div>Name: ' + $scope.msg.name + '</div>' +
+		'<div>Message: ' + $scope.msg.body + '</div>' +
+		'<div>Date: ' + (new Date()).toString() + '</div>';
 
-		var textBody = 'Name: ' + $scope.msg.name + '\n' +		
-				'Message: ' + $scope.msg.body + '\n' +
-				'Date: ' + (new Date()).toString() + '\n';   
-        
-		// Set the Content-Type
-		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-		
-		// Delete the Requested With Header
-		delete $http.defaults.headers.common['X-Requested-With'];
-
+		var textBody = 'Name: ' + $scope.msg.name + '\n' +
+		'Message: ' + $scope.msg.body + '\n' +
+		'Date: ' + (new Date()).toString() + '\n';   
+        		
 		var url = '//api.postmarkapp.com/email';
 
 		var data = {
@@ -43,22 +37,18 @@ angular.module('personalResumeApp')
 			'Accept': 'application/json',
 			'Content-Type': 'application/json',
 			'X-Postmark-Server-Token': '39531bdb-c835-4395-8e96-703ec0beaa7a'
-		};			
-
-		var paramStr = $.param({url: url, data: JSON.stringify(data), headers: JSON.stringify(headers)});
+		};		
 
 		$http({
+		  url: url, 
 		  method: "POST", 
-		  url: '//gonzalozunino.com.ar', 
-		  data: paramStr
-		}).success(function (data) {
-			console.log(data);
+		  data: data,
+		  headers: headers
+		}).success(function (data) {			
 			$scope.success = true;
 			$scope.user = {};
-		}).error(function (data) {
-			console.log(data);
+		}).error(function (data) {			
 			$scope.error = true;
-		});
-	       	    
+		});	       	    
 	};
 });
