@@ -1,0 +1,8 @@
+.list-item-unstyled .list-group-item { 
+	border: none;
+}
+
+input.form-control, textarea.form-control {
+	background: #e7e7e7;
+	border: none;
+}

@@ -1,65 +1,74 @@
 <div id="contact" class="contact container animated bounceInLeft">
-	<h2>{{ viewName }}</h2>	
-	<p class="lead">
-		“Only love interests me, and I am only in contact with things that revolve around love.”<br>- Marc Chagall
-	</p>
-
-	<hr>	
-		
-	<div class="panel panel-default">
-	    <div class="panel-heading">
-	        <h2 class="panel-title">Contact me</h2>
-	    </div>
-	    <div class="panel-body" ng-controller="ContactCtrl">
-
-	    	<div class="alert alert-danger" ng-show="error">
-				<button class="close" data-dismiss="alert">x</button>
-				<strong>Error!</strong> An error occured while trying to send message.
-			</div>
-			<div class="alert alert-success" ng-show="success">
-				<button class="close" data-dismiss="alert">x</button>
-				<strong>Success! </strong> Your message was successfully sent.
-			</div>
-
-	    	<form class="form-horizontal" role="form" name="contactForm">
-
-
-	    		<!-- NAME -->				
-				<div class="form-group">
-					<label for="name" class="col-sm-2 control-label">Name</label>
-					<div class="col-sm-10" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
-						<input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required ng-model="msg.name">
-						<p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="help-block">Your name is required.</p>
-					</div>
-				</div>
-				
-				<div class="form-group">
-					<label for="email" class="col-sm-2 control-label">Email</label>
-					<div class="col-sm-10" ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
-						<input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required" ng-model="msg.email">
-						<p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Invalid email.</p>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="subject" class="col-sm-2 control-label">Subject</label>
-					<div class="col-sm-10" ng-class="{ 'has-error' : contactForm.subject.$invalid && !contactForm.subject.$pristine }">
-						<input type="text" class="form-control" id="subject" name="subject" placeholder="Job offer" required="required" ng-model="msg.subject">
-						<p ng-show="contactForm.subject.$error.required && !contactForm.subject.$pristine" class="help-block">You must specify a subject.</p>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="message" class="col-sm-2 control-label">Message</label>
-					<div class="col-sm-10" ng-class="{ 'has-error' : contactForm.message.$invalid && !contactForm.message.$pristine }">
-						<textarea class="form-control" id="message" name="message" placeholder="Your message..." required="required" ng-model="msg.body"></textarea>
-						<p ng-show="contactForm.message.$error.required && !contactForm.message.$pristine" class="help-block">You must specify a subject.</p>
-					</div>
-				</div>
-
-				<button class="btn btn-primary btn-lg pull-right" ng-click="send()" ng-disabled="contactForm.$invalid">Send</button>								
-				
-			</form>
-		</div>
-	</div>
+	<h2>{{ viewName }}</h2>
+	<hr>
+	<blockquote>
+		<p>Only love interests me, and I am only in contact with things that revolve around love.</p>
+		<footer>Marc Chagall</footer>
+	</blockquote>
+	
+	<div class="row">
+    	<div class="wrap col-xs-12 col-sm-6 list-item-unstyled">
+    		<h4>Additional Information</h4>
+    		<ul class="list-group list-unstyled">
+    			<li class="list-group-item">
+	    			<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+					</span>
+					&nbsp; {{resume.profile.current_location.street}} {{resume.profile.current_location.housenumber}} {{resume.profile.current_location.state}}, {{resume.profile.current_location.city}} - {{resume.profile.current_location.country}}
+				</li>
+				<li class="list-group-item">
+	    			<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+					</span>
+					&nbsp; {{resume.contact_details.phone}}
+				</li>
+    			<li class="list-group-item">
+	    			<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+					</span>
+					&nbsp; {{resume.contact_details.email}}
+				</li>
+    			<li class="list-group-item">
+	    			<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-skype fa-stack-1x fa-inverse"></i>
+					</span>
+					&nbsp; {{resume.contact_details.skype}}
+				</li>        
+    		</ul>
+    	</div>
+    	<div class="wrap col-xs-12 col-sm-6">
+    		<h4>Drop me a line</h4>
+    		<div class="contact-form-container" ng-controller="ContactCtrl">
+		        <div class="alert alert-danger" ng-show="error">
+		            <button class="close" data-dismiss="alert">x</button>
+		            <strong>Error!</strong> An error occured while trying to send message.
+		        </div>
+		        <div class="alert alert-success" ng-show="success">
+		            <button class="close" data-dismiss="alert">x</button>
+		            <strong>Success! </strong> Your message was successfully sent.
+		        </div>        
+		        <form role="form" name="contactForm">
+		            <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
+		                <input class="form-control" type="text" name="name" ng-model="msg.name" required="required" placeholder="YOUR NAME">
+		                <p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="help-block">Your name is required.</p>
+		            </div>
+		            <div class="form-group" ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
+		                <input class="form-control" type="email" name="email" ng-model="msg.email" required="required" placeholder="E-MAIL">
+		                <p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Invalid email.</p>
+		            </div>
+		            <div class="form-group" ng-class="{ 'has-error' : contactForm.message.$invalid && !contactForm.message.$pristine }">
+		                <textarea class="form-control" rows="5" name="message" ng-model="msg.body" required="required" placeholder="YOUR MESSAGE ..."></textarea>
+		                <p ng-show="contactForm.message.$error.required && !contactForm.message.$pristine" class="help-block">You must leave a cool messsage.</p>
+		            </div>
+		            <button class="btn btn-lg btn-block" ng-click="send()" ng-disabled="contactForm.$invalid">
+		                Send
+		            </button>
+		        </form>
+		    </div>		    
+    	</div>
+    </div>
 </div>

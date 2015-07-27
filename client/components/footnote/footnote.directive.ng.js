@@ -1,10 +1,10 @@
 'use strict'
 
 angular.module('personalResumeApp')
-.directive('footer', function() {
+.directive('footnote', function() {
   return {
     restrict: 'AE',
-    templateUrl: 'client/components/footer/footer.view.ng.html',
+    templateUrl: 'client/components/footnote/footnote.view.ng.html',
     replace: true
   };
 });

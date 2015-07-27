@@ -1,54 +1,62 @@
 'use strict';
 
 angular.module('personalResumeApp')
-.controller('ContactCtrl', function($scope, $http) {
-	$http.defaults.useXDomain = true;
+	.controller('ContactCtrl', function ($scope, $http) {
+		$scope.viewName = 'Contact';
+		$scope.success = false;
+		$scope.error = false;
 
-	$scope.viewName = 'Contact';
-	$scope.success = false;
-	$scope.error = false;
+		$scope.send = function () {
 
-	$scope.send = function () {
+			var htmlBody = '<div>Name: ' + $scope.msg.name + '</div>' +
+						   '<div>Email: ' + $scope.msg.email + '</div>' +
+						   '<div>Message: ' + $scope.msg.body + '</div>' +
+						   '<div>Date: ' + (new Date()).toString() + '</div>';
 
-		var htmlBody = '<div>Name: ' + $scope.msg.name + '</div>' +
-		'<div>Message: ' + $scope.msg.body + '</div>' +
-		'<div>Date: ' + (new Date()).toString() + '</div>';
+			var textBody = 'Name: ' + $scope.msg.name + '\n' +
+				'Email: ' + $scope.msg.email + '\n' +
+				'Message: ' + $scope.msg.body + '\n' +
+				'Date: ' + (new Date()).toString() + '\n';			
 
-		var textBody = 'Name: ' + $scope.msg.name + '\n' +
-		'Message: ' + $scope.msg.body + '\n' +
-		'Date: ' + (new Date()).toString() + '\n';   
-        		
-		var url = '//api.postmarkapp.com/email';
+			$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
 
-		var data = {
-			'From': 'gonzalo.zunino@globant.com',
-			'To': 'gonzalo.zunino@gmail.com',
-			"Cc": '',
-			"Bcc": '',
-			'Subject': $scope.msg.subject,
-			"Tag": '',
-			'HtmlBody': htmlBody,
-			'TextBody': textBody,
-			'ReplyTo' : $scope.msg.email,
-			'TrackOpens': true
+			var url = 'https://api.postmarkapp.com/email';
+
+			var data = {
+				'From': 'gonzalo.zunino@globant.com',
+				'To': 'gonzalo.zunino@gmail.com',
+				'ReplyTo' : $scope.msg.email,
+				'Cc' : '',
+				'HtmlBody': htmlBody,
+				'TextBody': textBody,
+				'Subject': 'New Contact Form Submission'
+			};
+
+			var headers = {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+				'X-Postmark-Server-Token': '39531bdb-c835-4395-8e96-703ec0beaa7a'
+			};
+
+			var paramStr = $.param({url: url, data: JSON.stringify(data), headers: JSON.stringify(headers)});
+
+			$http({
+				method: 'POST',
+				url: 'http://gonzalozunino.com.ar/contact',
+				data: paramStr
+			}).
+			success(function (data) {				
+				$scope.success = true;
+				$scope.msg = {};
+			}).
+			error(function (data) {							
+				$scope.error = true;
+			});
 		};
 
-		var headers = {
-			'Accept': 'application/json',
-			'Content-Type': 'application/json',
-			'X-Postmark-Server-Token': '39531bdb-c835-4395-8e96-703ec0beaa7a'
-		};		
-
-		$http({
-		  url: url, 
-		  method: "POST", 
-		  data: data,
-		  headers: headers
-		}).success(function (data) {			
-			$scope.success = true;
-			$scope.user = {};
-		}).error(function (data) {			
-			$scope.error = true;
-		});	       	    
-	};
-});
+		$http.get('../resume/resume.json').success(function(data) {
+			$scope.resume = data;
+		}).error(function(data) {
+		    $q.reject(data);
+		});
+	});
