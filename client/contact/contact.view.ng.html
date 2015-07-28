@@ -51,18 +51,18 @@
 		            <button class="close" data-dismiss="alert">x</button>
 		            <strong>Success! </strong> Your message was successfully sent.
 		        </div>        
-		        <form role="form" name="contactForm">
+		        <form name="contactForm" novalidate="" class="contact-form">
 		            <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
-		                <input class="form-control" type="text" name="name" ng-model="msg.name" required="required" placeholder="YOUR NAME">
-		                <p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="help-block">Your name is required.</p>
+		                <input class="form-control" type="text" name="name" required="required" placeholder="YOUR NAME" ng-model="contactName">
+		                <p class="help-block" ng-show="contactForm.name.$invalid && !contactForm.name.$pristine">Your name is required.</p>
 		            </div>
 		            <div class="form-group" ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
-		                <input class="form-control" type="email" name="email" ng-model="msg.email" required="required" placeholder="E-MAIL">
-		                <p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Invalid email.</p>
+		                <input class="form-control" type="email" name="email" required="required" placeholder="E-MAIL" ng-model="contactEmail">
+		                <p  class="help-block" ng-show="contactForm.email.$invalid && !contactForm.email.$pristine">Invalid email.</p>
 		            </div>
 		            <div class="form-group" ng-class="{ 'has-error' : contactForm.message.$invalid && !contactForm.message.$pristine }">
-		                <textarea class="form-control" rows="5" name="message" ng-model="msg.body" required="required" placeholder="YOUR MESSAGE ..."></textarea>
-		                <p ng-show="contactForm.message.$error.required && !contactForm.message.$pristine" class="help-block">You must leave a cool messsage.</p>
+		                <textarea class="form-control msg" rows="5" name="message" required="required" placeholder="YOUR MESSAGE ..." ng-model="contactMsg" ></textarea>
+		                <p class="help-block" ng-show="contactForm.message.$error.required && !contactForm.message.$pristine">You must leave a cool messsage.</p>
 		            </div>
 		            <button class="btn btn-lg btn-block" ng-click="send()" ng-disabled="contactForm.$invalid">
 		                Send

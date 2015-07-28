@@ -6,3 +6,7 @@ input.form-control, textarea.form-control {
 	background: #e7e7e7;
 	border: none;
 }
+
+textarea.msg {
+	resize: none;
+}
