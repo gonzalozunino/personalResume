@@ -64,7 +64,7 @@
 		                <textarea class="form-control msg" rows="5" name="message" required="required" placeholder="YOUR MESSAGE ..." ng-model="contactMsg" ></textarea>
 		                <p class="help-block" ng-show="contactForm.message.$error.required && !contactForm.message.$pristine">You must leave a cool messsage.</p>
 		            </div>
-		            <button class="btn btn-primary btn-lg btn-block" ng-click="send()" ng-disabled="contactForm.$invalid">
+		            <button class="btn btn-default btn-lg btn-block" ng-click="send()" ng-disabled="contactForm.$invalid">
 		                Send
 		            </button>
 		        </form>
