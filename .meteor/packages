@@ -11,7 +11,7 @@ urigo:angular
 angularui:angular-ui-router
 angularui:angular-ui-bootstrap
 mquandalle:bower
-bootswatch:yeti
 fortawesome:fontawesome
 natestrauser:animate-css
 email
+bootswatch:paper
