@@ -1,210 +1,214 @@
 {
-    "profile": {
-        "first_name": "Gonzalo",
-        "middle_names": "Alejandro",
-        "last_name": "Zunino",
-        "date_of_birth": "1986-11-15",
-        "place_of_birth": "Río Cuarto",
-        "biography": "I'm an all-round UI developer with vast knowledge of front-end techniques. I believe that attention to detail is imperative in order to keep my code clean. Spending time optimizing web apps allows me to create as well as to try new and different things. I am a firm believer that team work brings about success and allows all participants to get the best out of themselves. Finally, my goal is to grow as a person and as a professional to be able to plan , analyze, and manage information providing organizations with practical and accurate solutions.",
-        "current_location": {
-            "street": "Rodriguez Peña",
-            "housenumber": 247,
-            "zipcode": "5000",
-            "state": "Córdoba",
-            "city": "Córdoba",
-            "country": "Argentina",
-            "planet": "Earth"
-        }
+    "status": "success",
+    "data": {
+        "profile": {
+            "first_name": "Gonzalo",
+            "middle_names": "Alejandro",
+            "last_name": "Zunino",
+            "date_of_birth": "1986-11-15",
+            "place_of_birth": "Río Cuarto",
+            "biography": "I'm an all-round UI developer with vast knowledge of front-end techniques. I believe that attention to detail is imperative in order to keep my code clean. Spending time optimizing web apps allows me to create as well as to try new and different things. I am a firm believer that team work brings about success and allows all participants to get the best out of themselves. Finally, my goal is to grow as a person and as a professional to be able to plan , analyze, and manage information providing organizations with practical and accurate solutions.",
+            "current_location": {
+                "street": "Rodriguez Peña",
+                "housenumber": 247,
+                "zipcode": "5000",
+                "state": "Córdoba",
+                "city": "Córdoba",
+                "country": "Argentina",
+                "planet": "Earth"
+            }
+        },
+        "contact_details": {
+            "email": "gonzalo.zunino@gmail.com",
+            "phone": "+54 9 351 2141417",
+            "skype": "zunino.gonzalo",
+            "website": "http://gonzalozunino.com.ar/",
+            "twitter": "http://twitter.com/gonezunino",
+            "linkedin": "/in/gonzalozunino"
+        },
+        "educations": [
+            {
+                "title": "Universidad Empresarial Siglo XXI",
+                "specification": "System Engineering",
+                "location": "'Córdoba (capital)",
+                "level": "Bachelor",
+                "description": "The education was mainly Java-based programming, but I also learned about SQL, MVC, UML and more. During my time in college, I specialized in systems analysis and design. Here I learned about -the importance of OOP-, web- and user experience and design.",
+                "start_date": "2008-08-01",
+                "end_date": null,
+                "completed": true
+            }
+        ],
+        "careers": [
+            {
+                "title": "Web UI Developer",
+                "specification": "Junior advance developer",
+                "location": "Córdoba (capital)",
+                "level": "Fulltime",
+                "description": "Globant wants to challenge the status quo and become the best company developing solutions that combine the best of engineering, innovation and design. Globant goal is to be the leader in the creation of innovative software products that appeal to global audiences. My role as a Web UI is fill the middle ground developing web apps, combining both design sensibilities and technical skills together. Here I worked in many proyects using different frameworks like Backbone, Marionette, AngularJS, ReactJS and many others, allowing me to be flexible to any work environment.",
+                "start_date": "2011-04-01",
+                "end_date": null,
+    			"link": "http://www.globant.com/"
+            }
+        ],
+        "skills": [
+            {
+                "title": "MySQL",
+    			"level": 5,
+                "level_detailed": 9,
+                "endorsement": ""
+            },
+            {
+                "title": "HTML(5)",
+    			"level": 5,
+                "level_detailed": 10,
+                "endorsement": ""
+            },
+            {
+                "title": "CSS(3)",
+    			"level": 5,
+                "level_detailed": 9,
+                "endorsement": ""
+            },
+            {
+                "title": "Javascript",
+    			"level": 4,
+                "level_detailed": 9,
+                "endorsement": ""
+            },
+            {
+                "title": "JQuery",
+    			"level": 4,
+                "level_detailed": 10,
+                "endorsement": ""
+            },
+            {
+                "title": "LESS",
+    			"level": 4,
+                "level_detailed": 8,
+                "endorsement": ""
+            },
+            {
+                "title": "JSON",
+    			"level": 5,
+                "level_detailed": 10,
+                "endorsement": ""
+            },
+            {
+                "title": "XML",
+    			"level": 5,
+                "level_detailed": 10,
+                "endorsement": ""
+            },
+            {
+                "title": "Bootstrap Framework",
+    			"level": 4,
+                "level_detailed": 8,
+                "endorsement": ""
+            },
+            {
+                "title": "Object Orientated Programming",
+    			"level": 5,
+                "level_detailed": 8,
+                "endorsement": ""
+            },
+            {
+                "title": "MVC Pattern",
+    			"level": 4,
+                "level_detailed": 8,
+                "endorsement": ""
+            },
+            {
+                "title": "Singleton Pattern",
+    			"level": 4,
+                "level_detailed": 9,
+                "endorsement": ""
+            },
+            {
+                "title": "Method Factory Pattern",
+    			"level": 4,
+                "level_detailed": 7,
+                "endorsement": ""
+            },
+            {
+                "title": "Builder Pattern",
+    			"level": 4,
+                "level_detailed": 7,
+                "endorsement": ""
+            },
+            {
+                "title": "UML",
+    			"level": 4,
+                "level_detailed": 8,
+                "endorsement": ""
+            },
+            {
+                "title": "Java",
+    			"level": 4,
+                "level_detailed": 7,
+                "endorsement": ""
+            },
+            {
+                "title": "AngularJS",
+    			"level": 2,
+                "level_detailed": 4,
+                "endorsement": ""
+            }
+        ],
+        "languages": [
+            {
+                "title": "English",
+    			"level": 5,
+                "level_detailed": 9,
+                "endorsement": "Daily use"
+            },
+            {
+                "title": "Spanish",
+    			"level": 3,
+                "level_detailed": 3,
+                "endorsement": "Native"
+            }
+        ],
+        "tools": [
+            {
+                "title": "Sublime Text",
+    			"level": 4,
+                "level_detailed": 7,
+                "endorsement": "2 years"
+            },
+            {
+                "title": "Subversion",
+    			"level": 4,
+                "level_detailed": 7,
+                "endorsement": "5 years"
+            },
+            {
+                "title": "Git",
+    			"level": 3,
+                "level_detailed": 6,
+                "endorsement": "2 year"
+            }
+        ],
+        "interests": [
+            {
+                "title": "Sports",
+                "description": "I couldn't live without sports. I love going for a run every day. Once or twice a week, you'll find me playing basketball or maybe at a soccer game. Big Knicks and Boca Juniors fan.",
+    			"image": "sports.png"
+            },
+            {
+                "title": "Music",
+                "description": "Music is amazing. I have a varied taste of music and I listen to it at work, during sports, riding my bike, on the train... I play bass guitar myself and would love to own a drum-kit some day.",
+    			"image": "music.png"
+            }
+        ],
+        "projects": [
+        	{
+    	    	"title": "Mals",
+    	    	"description": "Mals, a creative agency located in Rotterdam.",
+    	    	"tags": "Development, Wordpress, Bootstrap",
+    	    	"image": "project_mals.jpg",
+    	    	"link": "http://studiomals.com"
+        	}
+        ]
     },
-    "contact_details": {
-        "email": "gonzalo.zunino@gmail.com",
-        "phone": "+54 9 351 2141417",
-        "skype": "zunino.gonzalo",
-        "website": "http://gonzalozunino.com.ar/",
-        "twitter": "http://twitter.com/gonezunino",
-        "linkedin": "/in/gonzalozunino"
-    },
-    "educations": [
-        {
-            "title": "Universidad Empresarial Siglo XXI",
-            "specification": "System Engineering",
-            "location": "'Córdoba (capital)",
-            "level": "Bachelor",
-            "description": "The education was mainly Java-based programming, but I also learned about SQL, MVC, UML and more. During my time in college, I specialized in systems analysis and design. Here I learned about -the importance of OOP-, web- and user experience and design.",
-            "start_date": "2008-08-01",
-            "end_date": null,
-            "completed": true
-        }
-    ],
-    "careers": [
-        {
-            "title": "Web UI Developer",
-            "specification": "Junior advance developer",
-            "location": "Córdoba (capital)",
-            "level": "Fulltime",
-            "description": "Globant wants to challenge the status quo and become the best company developing solutions that combine the best of engineering, innovation and design. Globant goal is to be the leader in the creation of innovative software products that appeal to global audiences. My role as a Web UI is fill the middle ground developing web apps, combining both design sensibilities and technical skills together. Here I worked in many proyects using different frameworks like Backbone, Marionette, AngularJS, ReactJS and many others, allowing me to be flexible to any work environment.",
-            "start_date": "2011-04-01",
-            "end_date": null,
-			"link": "http://www.globant.com/"
-        }
-    ],
-    "skills": [
-        {
-            "title": "MySQL",
-			"level": 5,
-            "level_detailed": 9,
-            "endorsement": ""
-        },
-        {
-            "title": "HTML(5)",
-			"level": 5,
-            "level_detailed": 10,
-            "endorsement": ""
-        },
-        {
-            "title": "CSS(3)",
-			"level": 5,
-            "level_detailed": 9,
-            "endorsement": ""
-        },
-        {
-            "title": "Javascript",
-			"level": 4,
-            "level_detailed": 9,
-            "endorsement": ""
-        },
-        {
-            "title": "JQuery",
-			"level": 4,
-            "level_detailed": 10,
-            "endorsement": ""
-        },
-        {
-            "title": "LESS",
-			"level": 4,
-            "level_detailed": 8,
-            "endorsement": ""
-        },
-        {
-            "title": "JSON",
-			"level": 5,
-            "level_detailed": 10,
-            "endorsement": ""
-        },
-        {
-            "title": "XML",
-			"level": 5,
-            "level_detailed": 10,
-            "endorsement": ""
-        },
-        {
-            "title": "Bootstrap Framework",
-			"level": 4,
-            "level_detailed": 8,
-            "endorsement": ""
-        },
-        {
-            "title": "Object Orientated Programming",
-			"level": 5,
-            "level_detailed": 8,
-            "endorsement": ""
-        },
-        {
-            "title": "MVC Pattern",
-			"level": 4,
-            "level_detailed": 8,
-            "endorsement": ""
-        },
-        {
-            "title": "Singleton Pattern",
-			"level": 4,
-            "level_detailed": 9,
-            "endorsement": ""
-        },
-        {
-            "title": "Method Factory Pattern",
-			"level": 4,
-            "level_detailed": 7,
-            "endorsement": ""
-        },
-        {
-            "title": "Builder Pattern",
-			"level": 4,
-            "level_detailed": 7,
-            "endorsement": ""
-        },
-        {
-            "title": "UML",
-			"level": 4,
-            "level_detailed": 8,
-            "endorsement": ""
-        },
-        {
-            "title": "Java",
-			"level": 4,
-            "level_detailed": 7,
-            "endorsement": ""
-        },
-        {
-            "title": "AngularJS",
-			"level": 2,
-            "level_detailed": 4,
-            "endorsement": ""
-        }
-    ],
-    "languages": [
-        {
-            "title": "English",
-			"level": 5,
-            "level_detailed": 9,
-            "endorsement": "Daily use"
-        },
-        {
-            "title": "Spanish",
-			"level": 3,
-            "level_detailed": 3,
-            "endorsement": "Native"
-        }
-    ],
-    "tools": [
-        {
-            "title": "Sublime Text",
-			"level": 4,
-            "level_detailed": 7,
-            "endorsement": "2 years"
-        },
-        {
-            "title": "Subversion",
-			"level": 4,
-            "level_detailed": 7,
-            "endorsement": "5 years"
-        },
-        {
-            "title": "Git",
-			"level": 3,
-            "level_detailed": 6,
-            "endorsement": "2 year"
-        }
-    ],
-    "interests": [
-        {
-            "title": "Sports",
-            "description": "I couldn't live without sports. I love going for a run every day. Once or twice a week, you'll find me playing basketball or maybe at a soccer game. Big Knicks and Boca Juniors fan.",
-			"image": "sports.png"
-        },
-        {
-            "title": "Music",
-            "description": "Music is amazing. I have a varied taste of music and I listen to it at work, during sports, riding my bike, on the train... I play bass guitar myself and would love to own a drum-kit some day.",
-			"image": "music.png"
-        }
-    ],
-    "projects": [
-    	{
-	    	"title": "Mals",
-	    	"description": "Mals, a creative agency located in Rotterdam.",
-	    	"tags": "Development, Wordpress, Bootstrap",
-	    	"image": "project_mals.jpg",
-	    	"link": "http://studiomals.com"
-    	}
-    ]
+    "message": null   
 }

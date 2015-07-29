@@ -12,18 +12,18 @@
     <div class="col-xs-12 text-xs-center col-md-7 text-md-left">
       <p class="wrap">
         <h4>Name:</h4>
-        {{resume.profile.first_name}} {{resume.profile.middle_names}} {{resume.profile.last_name}}<br>
+        {{profile.first_name}} {{profile.middle_names}} {{profile.last_name}}<br>
         <h4>Age:</h4>
-        {{getAge(resume.profile.date_of_birth)}}        
+        {{getAge(profile.date_of_birth)}}        
         <h4>Location:</h4>
-        {{resume.profile.current_location.state}}, {{resume.profile.current_location.city}} - {{resume.profile.current_location.country}}
+        {{profile.current_location.state}}, {{profile.current_location.city}} - {{profile.current_location.country}}
       </p>
     </div>
        
     <div class="col-xs-12 text-xs-center col-md-12 text-md-left">      
       <p class="wrap">
         <h4>About me</h4><br>
-        {{resume.profile.biography}}
+        {{profile.biography}}
       </p>      
     </div>
   </div>

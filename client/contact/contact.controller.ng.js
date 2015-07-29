@@ -1,16 +1,16 @@
 'use strict'
 
 angular.module('personalResumeApp')
-.controller('ContactCtrl', function($scope, $stateParams, $http, $q, $meteor) {
+.controller('ContactCtrl', function($scope, $stateParams, ResumeHttpService, $meteor) {
 	$scope.viewName = 'Contact';
 	$scope.success = false;
 	$scope.error = false;
 
-	$http.get('../resume/resume.json').success(function(data) {
-		$scope.resume = data;
-	}).error(function(data) {
-	    $q.reject(data);
-	});	
+	ResumeHttpService.getInfo().then(function(info) {		
+        $scope.contact = info.data.contact_details;
+    }, function(error) {
+        // promise rejected, could log the error with: console.log('error', error);
+    });
 
 	$scope.send = function(){
 		$meteor.call('sendEmail', $scope.contactName, $scope.contactEmail, $scope.contactMsg).then(
