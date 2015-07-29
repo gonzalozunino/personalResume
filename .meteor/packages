@@ -9,10 +9,9 @@ autopublish
 insecure
 urigo:angular
 angularui:angular-ui-router
-twbs:bootstrap
 angularui:angular-ui-bootstrap
 mquandalle:bower
-fortawesome:fontawesome
 bootswatch:yeti
+fortawesome:fontawesome
 natestrauser:animate-css
 email
