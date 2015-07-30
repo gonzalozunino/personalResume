@@ -5,7 +5,11 @@ angular.module('personalResumeApp')
   $stateProvider
   .state('experiences', {
     url: '/experiences',
-    templateUrl: 'client/experiences/experiences.view.ng.html',
-    controller: 'ExperiencesCtrl'
+	views: {
+		"experiences": {
+			templateUrl: 'client/experiences/experiences.view.ng.html',
+			controller: 'ExperiencesCtrl'
+		}
+	}	
   });
 });

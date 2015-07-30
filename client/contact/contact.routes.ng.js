@@ -3,9 +3,13 @@
 angular.module('personalResumeApp')
 .config(function($stateProvider) {
   $stateProvider
-  .state('contact', {
+  .state('contact', {  	
     url: '/contact',
-    templateUrl: 'client/contact/contact.view.ng.html',
-    controller: 'ContactCtrl'
+	views: {
+		"contact": {
+			templateUrl: 'client/contact/contact.view.ng.html',
+			controller: 'ContactCtrl'
+		}
+	}
   });
 });

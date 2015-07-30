@@ -5,7 +5,11 @@ angular.module('personalResumeApp')
   $stateProvider
   .state('abilities', {
     url: '/abilities',
-    templateUrl: 'client/abilities/abilities.view.ng.html',
-    controller: 'AbilitiesCtrl'
+    views: {
+    	"abilities":{
+			templateUrl: 'client/abilities/abilities.view.ng.html',
+			controller: 'AbilitiesCtrl'
+		}
+    }
   });
 });
