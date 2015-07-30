@@ -7,9 +7,9 @@ angular.module('personalResumeApp')
     url: '/abilities',
     views: {
     	"abilities":{
-			templateUrl: 'client/abilities/abilities.view.ng.html',
-			controller: 'AbilitiesCtrl'
-		}
+  			templateUrl: 'client/abilities/abilities.view.ng.html',
+  			controller: 'AbilitiesCtrl'
+  		}
     }
   });
 });

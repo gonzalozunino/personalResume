@@ -22,7 +22,7 @@ angular.module('personalResumeApp')
         }
     };
 }])
-.controller('MainCtrl', function($scope, ResumeHttpService) {
+.controller('MainCtrl', function($scope, ResumeHttpService, $document) {
 	ResumeHttpService.getInfo().then(function(info) {
         $scope.profile = info.data.profile;
     }, function(error) {
@@ -34,4 +34,12 @@ angular.module('personalResumeApp')
 		var ageDate = new Date(ageDifMs);
 		return Math.abs(ageDate.getUTCFullYear() - 1970);
 	};
+    //Makes an element to scroll to the top
+    $scope.toTheTop = function() {
+      $document.scrollTopAnimated(0, 500);
+    };
+    //Makes an element to a specific section
+    $scope.toExperiences = function() {
+      $document.scrollToElementAnimated(angular.element('#experiences'));
+    };    
 });

@@ -9,7 +9,7 @@ angular.module('personalResumeApp')
 		"main": {
 			templateUrl: 'client/main/main.view.ng.html',
 			controller: 'MainCtrl'
-		}/*,
+		},
 		"contact": {
 			templateUrl: 'client/contact/contact.view.ng.html',
 			controller: 'ContactCtrl'
@@ -21,7 +21,7 @@ angular.module('personalResumeApp')
     	"abilities":{
 			templateUrl: 'client/abilities/abilities.view.ng.html',
 			controller: 'AbilitiesCtrl'
-		}*/
+		}
 	}
   });
 });

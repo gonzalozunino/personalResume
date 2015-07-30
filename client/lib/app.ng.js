@@ -1,7 +1,8 @@
 angular.module('personalResumeApp', [
   'angular-meteor',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'duScroll'
 ]);
 
 onReady = function() {
