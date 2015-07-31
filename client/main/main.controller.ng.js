@@ -1,5 +1,7 @@
 'use strict'
 
+new WOW().init();
+
 angular.module('personalResumeApp')
 .factory('ResumeHttpService', ['$http', '$q', function($http, $q){
 	return {
@@ -22,7 +24,8 @@ angular.module('personalResumeApp')
         }
     };
 }])
-.controller('MainCtrl', function($scope, ResumeHttpService, $document) {
+.controller('MainCtrl', function($scope, $document, ResumeHttpService) {
+
 	ResumeHttpService.getInfo().then(function(info) {
         $scope.profile = info.data.profile;
     }, function(error) {
@@ -41,5 +44,5 @@ angular.module('personalResumeApp')
     //Makes an element to a specific section
     $scope.toExperiences = function() {
       $document.scrollToElementAnimated(angular.element('#experiences'));
-    };    
+    };
 });
