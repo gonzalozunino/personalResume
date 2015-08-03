@@ -3,13 +3,15 @@
 	<base href="/">
 </head>
 <body>
-	<toolbar></toolbar>
-	<div class="container" ng-controller="MainCtrl">		
-		<div ui-view="main"></div>
-		<div ui-view="experiences"></div>
-		<div ui-view="abilities"></div>
-		<div ui-view="contact"></div>
-		<i class="fa fa-arrow-up fa-3x pull-right wow bounceInLeft" ng-click="toTheTop()"></i>
-	</div>	
+	<prenav></prenav>	
+	<toolbar></toolbar>	
+	<div ng-controller="MainCtrl">	
+		<div id="main" ui-view="main"></div>
+		<div id="experiences" ui-view="experiences"></div>
+		<midnav></midnav>
+		<div id="abilities" ui-view="abilities"></div>
+		<div id="contact" ui-view="contact"></div>
+	</div>
+	<angledouble></angledouble>
 	<footnote></footnote>
 </body>

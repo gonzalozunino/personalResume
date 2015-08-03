@@ -1,26 +1,29 @@
-<div id="profile" class="profile container">  
-  <h2>Profile</h2>
-  <p class="lead">Creative Web UI Developer</p>
-  <hr>
-  <div class="row">
-    <div class="col-xs-12 text-xs-center col-md-5 text-md-right">
+<div id="aboutme" class="profile container">
+  <h2 class="section-title text-xs-center">About me</h2>
+  <blockquote class="hidden-xs">
+    <p>I am always doing that which I cannot do, in order that I may learn how to do it.</p>
+    <footer>Pablo Picasso</footer>
+  </blockquote>
+
+  <hr>  
+  <div class="row container">
+    <div class="col-xs-12 text-xs-center col-md-5 text-md-right wow fadeInUp">
       <img class="img-circle" src="gonzalozunino.png" alt="I'm Gonzalo Zunino" width="200" height="200">
     </div>    
-    <div class="col-xs-12 text-xs-center col-md-7 text-md-left">
+    <div class="col-xs-12 col-md-7 wow fadeInUp">
       <p>
         <h4>Name:</h4>
         {{profile.first_name}} {{profile.middle_names}} {{profile.last_name}}<br>
         <h4>Age:</h4>
-        {{getAge(profile.date_of_birth)}}        
+        {{getAge(profile.date_of_birth)}} years       
         <h4>Location:</h4>
         {{profile.current_location.state}}, {{profile.current_location.city}} - {{profile.current_location.country}}
       </p>
     </div>       
-    <div class="col-xs-12 text-xs-center col-md-12 text-md-left">      
-      <p>
-        <h4>About me</h4><br>
+    <div class="col-xs-12 col-md-12 wow fadeInUp">
+      <p>      
         {{profile.biography}}
-      </p>      
+      </p>
     </div>
   </div>
 </div>

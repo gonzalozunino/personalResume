@@ -2,7 +2,9 @@ angular.module('personalResumeApp', [
   'angular-meteor',
   'ui.router',
   'ui.bootstrap',
-  'duScroll'
+  'angular-parallax',
+  'duScroll',
+  'sticky'
 ]);
 
 onReady = function() {

@@ -1,0 +1,75 @@
+/*
+Toolbar Style
+------------------------------------------------------*/
+.navbar-wrapper .navbar{
+    top: 0;
+    z-index: 100;  
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .navbar-header{
+        display:none;
+    }
+    .nav > li > a{
+        display:inline-block;
+    }
+    .navbar-nav > li{
+        float: none;
+        display: inline;
+    }
+    .navbar-nav{
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+
+    .navbar-toggle{
+        margin-top:14px;
+    }
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      margin-top:0px;
+      position: relative;
+      z-index: 15;
+      background:#262b37;
+    }
+    .navbar-wrapper .container{
+        padding:0px;
+    }
+
+    .navbar-collapse{
+        padding:0;
+    }
+    .navbar-collapse.in{
+        max-height:100%;
+    }
+
+    .navbar.navbar-inverse.navbar-static-top {
+      margin:0px auto;
+      background:#262b37;
+      color:#c3c8d6;
+      border:none;
+      font-family: 'Open Sans', sans-serif;
+      font-size:14px;
+      text-transform:uppercase;
+    }
+    .navbar.navbar-inverse.navbar-static-top a{
+      color:#c3c8d6;
+      padding:22px 25px;
+      line-height:18px;
+      text-align:center;
+    }
+    .navbar.navbar-inverse.navbar-static-top a:hover{
+      color:#fff;
+    }
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus{
+      background:#1b1f29;
+      color:#c3c8d6;
+    }
+    .navbar-inverse .navbar-nav>.active>a:hover {
+      background:#1b1f29;
+      color:#fff;
+    }
+}

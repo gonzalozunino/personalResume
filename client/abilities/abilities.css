@@ -1,0 +1,35 @@
+.star-rating {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}  
+
+.star {
+ color: #ddd;
+ font-size: 15px;
+ text-shadow: .03em .03em #aaa;
+ list-style-type: none;
+ display: inline-block;
+ cursor: pointer;
+}
+
+.star.filled {
+  color: #7e878f;
+}
+
+.star.readonly .star.filled {
+ color: #666;
+}
+
+#abilities {
+    background-color: #F8F8F8;
+}
+
+#abilities ul > li { 
+    min-height: 30px; padding: 3px 0px; 
+}
+
+#abilities ul > li .ability-title { 
+    display: inline-block; 
+    width: 60%; 
+}

@@ -30,142 +30,204 @@
             {
                 "title": "Universidad Empresarial Siglo XXI",
                 "specification": "System Engineering",
-                "location": "'Córdoba (capital)",
+                "location": "Córdoba",
                 "level": "Bachelor",
-                "description": "The education was mainly Java-based programming, but I also learned about SQL, MVC, UML and more. During my time in college, I specialized in systems analysis and design. Here I learned about -the importance of OOP-, web- and user experience and design.",
-                "start_date": "2008-08-01",
+                "description": "The education was mainly Java-based programming, but I also learned about SQL, MVC, UML and more. During my time in college, I specialized in systems analysis and design. Here I learned about the importance of OOP, web and user experience and design.",
+                "start_date": "-",
                 "end_date": null,
-                "completed": true
+                "completed": false,
+                "link": "http://www.21.edu.ar/"
+            },
+            {
+                "title": "Universidad Empresarial Siglo XXI - Business School",
+                "specification": "Diploma in Web application development with Java",
+                "location": "Córdoba",
+                "level": "Bachelor",
+                "description": "The Diploma in Web Application Development with Java is a training program that involves the language most widely used and currently applied in the market, with immediate job prospects. It approved the modules of this diploma are eligible to take any of the following international certifications: SCJA (Sun Certified Java Associate) Certification Exam (CX-310-019), SCJP (Sun Certified Java Programmer) and SCWCD (Sun Certified Web Component developer) - CX-310-083.",
+                "start_date": "-",
+                "end_date": null,
+                "completed": true,
+                "link": "http://www.21.edu.ar/escuela-de-negocios/"
             }
         ],
         "careers": [
             {
-                "title": "Web UI Developer",
-                "specification": "Junior advance developer",
-                "location": "Córdoba (capital)",
+                "title": "Globant",
+                "specification": "Web UI Developer",
+                "location": "Córdoba",
                 "level": "Fulltime",
                 "description": "Globant wants to challenge the status quo and become the best company developing solutions that combine the best of engineering, innovation and design. Globant goal is to be the leader in the creation of innovative software products that appeal to global audiences. My role as a Web UI is fill the middle ground developing web apps, combining both design sensibilities and technical skills together. Here I worked in many proyects using different frameworks like Backbone, Marionette, AngularJS, ReactJS and many others, allowing me to be flexible to any work environment.",
-                "start_date": "2011-04-01",
-                "end_date": null,
+                "start_date": "2013-11-01",
+                "end_date": "Current",
     			"link": "http://www.globant.com/"
-            }
-        ],
-        "skills": [
-            {
-                "title": "MySQL",
-    			"level": 5,
-                "level_detailed": 9,
-                "endorsement": ""
             },
             {
+                "title": "Kunan S.A",
+                "specification": "Java Developer",
+                "location": "Córdoba",
+                "level": "Internship",
+                "description": "Kunan is a technology company with ability to become a strategic supplier to its customers, with personalized solutions. Applying from Oracle Technology works in high-performance tools to Free Software (Open Source) for SMEs. In Kunan I investigated new web-technologies they could possibly use to improve the front-end of their java-based ERP system.",
+                "start_date": "2012-10-01",
+                "end_date": "2013-10-01",
+                "link": "http://www.kunan.com.ar/"
+            },
+            {
+                "title": "Vates",
+                "specification": "Java Developer",
+                "location": "Córdoba",
+                "level": "Internship",
+                "description": "Vates is dedicated to software development, testing, quality control and R&D. In vates I did my first internship where I learned to apply my knowledge as a Java developer and more importantly work in large teams with AGILE technology.",
+                "start_date": "2012-03-01",
+                "end_date": "2012-06-01",
+                "link": "http://www.vates.com/"
+            }
+        ],
+        "skills": [            
+            {
                 "title": "HTML(5)",
-    			"level": 5,
+                "level": 5,
                 "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "CSS(3)",
-    			"level": 5,
+                "level": 5,
                 "level_detailed": 9,
                 "endorsement": ""
             },
             {
                 "title": "Javascript",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 9,
                 "endorsement": ""
             },
             {
                 "title": "JQuery",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "LESS",
-    			"level": 4,
+                "level": 4,
+                "level_detailed": 8,
+                "endorsement": ""
+            },
+            {
+                "title": "SASS",
+                "level": 4,
                 "level_detailed": 8,
                 "endorsement": ""
             },
             {
                 "title": "JSON",
-    			"level": 5,
+                "level": 5,
                 "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "XML",
-    			"level": 5,
+                "level": 5,
                 "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Bootstrap Framework",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 8,
                 "endorsement": ""
             },
             {
+                "title": "AngularJS",
+                "level": 2,
+                "level_detailed": 4,
+                "endorsement": ""
+            },
+            {
+                "title": "Backbone-Marionette",
+                "level": 2,
+                "level_detailed": 4,
+                "endorsement": ""
+            },
+            {
+                "title": "ReactJS",
+                "level": 2,
+                "level_detailed": 4,
+                "endorsement": ""
+            },
+            {
+                "title": "Java",
+                "level": 4,
+                "level_detailed": 7,
+                "endorsement": ""
+            },
+            {
+                "title": "Perl",
+                "level": 4,
+                "level_detailed": 7,
+                "endorsement": ""
+            },
+            {
                 "title": "Object Orientated Programming",
-    			"level": 5,
+                "level": 4,
                 "level_detailed": 8,
                 "endorsement": ""
             },
             {
                 "title": "MVC Pattern",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 8,
                 "endorsement": ""
             },
             {
                 "title": "Singleton Pattern",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 9,
                 "endorsement": ""
             },
             {
                 "title": "Method Factory Pattern",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 7,
                 "endorsement": ""
             },
             {
                 "title": "Builder Pattern",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 7,
                 "endorsement": ""
             },
             {
                 "title": "UML",
-    			"level": 4,
+                "level": 4,
                 "level_detailed": 8,
                 "endorsement": ""
             },
             {
-                "title": "Java",
-    			"level": 4,
-                "level_detailed": 7,
-                "endorsement": ""
-            },
-            {
-                "title": "AngularJS",
-    			"level": 2,
-                "level_detailed": 4,
+                "title": "SQL",
+                "level": 4,
+                "level_detailed": 8,
                 "endorsement": ""
             }
         ],
         "languages": [
             {
+                "title": "Spanish",
+                "level": 5,
+                "level_detailed": 5,
+                "endorsement": "Native"
+            },
+            {
                 "title": "English",
-    			"level": 5,
-                "level_detailed": 9,
+    			"level": 4,
+                "level_detailed": 5,
                 "endorsement": "Daily use"
             },
             {
-                "title": "Spanish",
-    			"level": 3,
-                "level_detailed": 3,
-                "endorsement": "Native"
+                "title": "Italian",
+                "level": 1,
+                "level_detailed": 5,
+                "endorsement": "Solo un po"
             }
         ],
         "tools": [
@@ -201,13 +263,7 @@
             }
         ],
         "projects": [
-        	{
-    	    	"title": "Mals",
-    	    	"description": "Mals, a creative agency located in Rotterdam.",
-    	    	"tags": "Development, Wordpress, Bootstrap",
-    	    	"image": "project_mals.jpg",
-    	    	"link": "http://studiomals.com"
-        	}
+        	{}
         ]
     },
     "message": null   

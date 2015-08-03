@@ -1,19 +1,29 @@
-<div id="abilities" class="abilities container">
-	<h2>{{ viewName }}</h2>
+<div class="abilities container">
+	<h2 class="section-title text-xs-center">{{ viewName }}</h2>
 	<blockquote class="hidden-xs">
 		<p>The greatness of a man is not in how much wealth he acquires, but in his integrity and his ability to affect those around him positively.</p>
 		<footer>Bob Marley</footer>
 	</blockquote>
 
 	<hr>
+
+	<h3 class="text-center">Skills</h3>
+	<div class="row container" ng-repeat="skill in skills">
+		<div class="col-xs-6 text-xs-right col-md-6 text-md-right ability-title wow bounceInLeft">
+			<div>{{skill.title}}</div>		
+		</div>
+		<div class="col-xs-6 text-xs-left col-md-6 text-md-left ability-score wow bounceInRight">
+			<div><star-rating ng-model="skill.level" readonly="isReadonly"></star-rating></div>
+		</div>
+	</div>
 	
-	<p>
-		Bacon ipsum dolor amet andouille tenderloin pork chop jerky, short ribs ribeye rump kielbasa pork loin picanha landjaeger flank pancetta chicken. Ribeye pork chop porchetta hamburger, frankfurter shank biltong brisket turducken sausage tongue andouille salami. Sirloin ham pork ground round kevin andouille frankfurter prosciutto shankle shank. Pork tongue pork belly pork loin flank salami ball tip jowl tail ham short loin. Ham hock chuck porchetta doner pork belly boudin pancetta sausage pastrami fatback frankfurter tri-tip strip steak salami.
-
-		Corned beef tongue boudin, kevin shoulder porchetta jowl ribeye strip steak frankfurter spare ribs chicken pork chop. Pork chop chicken spare ribs pig, bresaola leberkas kevin. Landjaeger kielbasa frankfurter rump prosciutto kevin t-bone. Ball tip t-bone jerky kevin.
-
-		Pork chop landjaeger pork loin filet mignon, drumstick swine cupim tongue alcatra doner hamburger. Leberkas tail salami pancetta hamburger t-bone pig pork chop pork picanha porchetta. Pig fatback filet mignon drumstick frankfurter shank turducken andouille. Beef ribs corned beef jerky shankle ham pork t-bone turducken. Tail sirloin andouille jowl, short ribs tenderloin picanha ham hock shoulder cow strip steak meatloaf bresaola pig. Short loin flank turkey picanha boudin chuck sirloin filet mignon, pork loin cow frankfurter prosciutto pork chop spare ribs pork. Frankfurter cow kevin spare ribs pastrami, cupim chuck.
-
-		Pork loin venison cupim picanha fatback, cow ribeye capicola boudin ham flank strip steak. Short loin alcatra sirloin short ribs kevin fatback beef meatloaf, t-bone ham hock shoulder sausage turkey drumstick. Shank salami drumstick corned beef jowl, pastrami rump hamburger turkey capicola ball tip. Tongue pastrami biltong ball tip porchetta short loin. Short loin ham hock pork loin porchetta, meatball bresaola tongue salami pork belly drumstick sausage pork hamburger. Pastrami sirloin ham hock, kevin pancetta spare ribs cupim picanha frankfurter leberkas filet mignon. Kevin frankfurter pork belly ham pastrami.
-	</p>
+	<h3 class="text-center">Languages</h3>
+	<div class="row container" ng-repeat="language in languages">
+		<div class="col-xs-6 text-xs-right col-md-6 text-md-right ability-title wow bounceInLeft">
+			<div>{{language.title}} ({{language.endorsement}})</div>		
+		</div>
+		<div class="col-xs-6 text-xs-left col-md-6 text-md-left ability-score wow bounceInRight">
+			<div><star-rating ng-model="language.level" readonly="isReadonly"></star-rating></div>
+		</div>
+	</div>
 </div>

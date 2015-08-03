@@ -10,11 +10,14 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "overrides": {
     "angular": {
-      "main": [] 
+      "main": []
     }
+  },
+  "devDependencies": {
+    "angular-parallax": "~0.0.2",
+    "ngSticky": "~1.7.9"
   }
 }
