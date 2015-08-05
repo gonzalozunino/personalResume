@@ -52,15 +52,11 @@ p {
 .info{
     position:absolute;
     left:0;
-    right:0;
-    top:35%;
-    text-align:center;
-    max-width:960px;
+    right:0;    
+    text-align:center;    
     border:1px solid #929292;
     background: rgba(0, 0, 0, 0.2);
      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
-    zoom: 1;    
-    padding: 60px 0 40px 0;
 }
 
 .info > h2{
@@ -103,8 +99,7 @@ p {
 }
 
 @media (min-width: 992px) {
-
-        /* Parallax
+    /* - Parallax
     ------------------------------------------------------------------------*/
     .parallax {
         background-attachment: fixed !important;
@@ -116,10 +111,9 @@ p {
     }
     .parallax-overlay-2 {
         background-color:rgba(0,0,0,0.75);
-        min-height: 600px;
     }
     .parallax .container{
-      padding: 150px 20px;
+      padding: 145px 20px;
     }
     .parallax .title{
         margin-bottom: 80px;
@@ -135,7 +129,7 @@ p {
         font-size: 34px;
         padding: 16px;
     }
-    .parallax h1 ,.parallax h2,.parallax h2,.parallax p, .parallax h4{
+    .parallax h1 ,.parallax h2,.parallax h2,.parallax p{
         color: #FFFFFF;
     }
     .parallax .border {
@@ -158,7 +152,7 @@ p {
         color:#222;
     }
 
-    /* Home
+    /* - Home
     ------------------------------------------------------------------------*/
     #home{
         background: url('parallax_bg01.jpg');
@@ -170,19 +164,19 @@ p {
     .home-parallax {  
     }
     .home-parallax .container{
-      padding: 30px 30px;
+      padding: 145px 20px;
     }
     .home-overlay {
         background:repeat scroll 0 0 rgba(53,60,79,.8);
         height: 100%;
-        min-height: 400px;
+        min-height: 900px;
         position: relative;
     }
 
     .home-overlay-v2{
         background:repeat scroll 0 0 rgba(53,60,79,.8);
         height: 100%;
-        min-height: 400px;
+        min-height: 845px;
         position: relative;
     }
     .logo{
@@ -194,19 +188,40 @@ p {
         margin: 0 auto;
     }
 
-    .home-overlay-v2, .home-overlay {
-        min-height: 1080px;
+    .info{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
-
-    .info {
-        margin: auto;
-        width: 60%;        
-        padding: 80px;
-    }   
     .info > h2{
-        font-size: 80px;
+        color: #FFFFFF;
+        font-weight: 800;
+        font-size: 90px;
     }
-    .info > h3{        
+    .info > h3{
+        color: #FFFFFF;
+        font-weight: 800;
         font-size: 33px;
     }
+    .avatar-section{
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        bottom: -235px;
+        width: 100%;
+        display: block;
+    }
+    .avatar-section img{
+        margin: 0 auto;    
+    }
+
+    .avatar-section img {
+        border: 10px solid #eff0f4;
+        border-radius: 250px;
+        height: 460px;
+        margin: 0 auto;
+        width: 460px;
+    }
+
+
 }

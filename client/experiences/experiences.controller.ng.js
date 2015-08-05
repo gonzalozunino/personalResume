@@ -2,7 +2,7 @@
 
 angular.module('personalResumeApp')
 .controller('ExperiencesCtrl', function($scope, ResumeHttpService) {
-  $scope.viewName = 'Experiences';
+  $scope.viewName = 'Experience';
 
   ResumeHttpService.getInfo().then(function(info) {
 	    $scope.careers = info.data.careers;

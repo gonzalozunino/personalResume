@@ -8,21 +8,21 @@
 	<hr>
 
 	<h3 class="text-center">Skills</h3>
-	<div class="row container" ng-repeat="skill in skills">
-		<div class="col-xs-6 text-xs-right col-md-6 text-md-right ability-title wow bounceInLeft">
+	<div class="row container wow fadeInUp" ng-repeat="skill in skills">
+		<div class="col-xs-6 text-xs-right col-md-6 text-md-right ability-title">
 			<div>{{skill.title}}</div>		
 		</div>
-		<div class="col-xs-6 text-xs-left col-md-6 text-md-left ability-score wow bounceInRight">
+		<div class="col-xs-6 text-xs-left col-md-6 text-md-left ability-score">
 			<div><star-rating ng-model="skill.level" readonly="isReadonly"></star-rating></div>
 		</div>
 	</div>
 	
 	<h3 class="text-center">Languages</h3>
-	<div class="row container" ng-repeat="language in languages">
-		<div class="col-xs-6 text-xs-right col-md-6 text-md-right ability-title wow bounceInLeft">
+	<div class="row container wow fadeInUp" ng-repeat="language in languages">
+		<div class="col-xs-6 text-xs-right col-md-6 text-md-right ability-title">
 			<div>{{language.title}} ({{language.endorsement}})</div>		
 		</div>
-		<div class="col-xs-6 text-xs-left col-md-6 text-md-left ability-score wow bounceInRight">
+		<div class="col-xs-6 text-xs-left col-md-6 text-md-left ability-score">
 			<div><star-rating ng-model="language.level" readonly="isReadonly"></star-rating></div>
 		</div>
 	</div>

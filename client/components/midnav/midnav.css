@@ -11,3 +11,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+.parallax .row h4{
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
