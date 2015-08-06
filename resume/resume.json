@@ -85,20 +85,20 @@
         "skills": [            
             {
                 "title": "HTML(5)",
-                "level": 5,
+                "level": 4,
                 "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "CSS(3)",
-                "level": 5,
-                "level_detailed": 9,
+                "level": 3,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Javascript",
                 "level": 4,
-                "level_detailed": 9,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
@@ -109,14 +109,14 @@
             },
             {
                 "title": "LESS",
-                "level": 4,
-                "level_detailed": 8,
+                "level": 3,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "SASS",
-                "level": 4,
-                "level_detailed": 8,
+                "level": 3,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
@@ -127,86 +127,86 @@
             },
             {
                 "title": "XML",
-                "level": 5,
+                "level": 4,
                 "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Bootstrap Framework",
                 "level": 4,
-                "level_detailed": 8,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "AngularJS",
-                "level": 2,
-                "level_detailed": 4,
+                "level": 3,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Backbone-Marionette",
-                "level": 2,
-                "level_detailed": 4,
+                "level": 3,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "ReactJS",
                 "level": 2,
-                "level_detailed": 4,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Java",
                 "level": 4,
-                "level_detailed": 7,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Perl",
                 "level": 4,
-                "level_detailed": 7,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Object Orientated Programming",
                 "level": 4,
-                "level_detailed": 8,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "MVC Pattern",
                 "level": 4,
-                "level_detailed": 8,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Singleton Pattern",
                 "level": 4,
-                "level_detailed": 9,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Method Factory Pattern",
                 "level": 4,
-                "level_detailed": 7,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "Builder Pattern",
                 "level": 4,
-                "level_detailed": 7,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "UML",
                 "level": 4,
-                "level_detailed": 8,
+                "level_detailed": 10,
                 "endorsement": ""
             },
             {
                 "title": "SQL",
                 "level": 4,
-                "level_detailed": 8,
+                "level_detailed": 10,
                 "endorsement": ""
             }
         ],
