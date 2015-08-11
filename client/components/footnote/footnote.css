@@ -1,10 +1,10 @@
-/* Custom page footer */
+/* Custom page footer
+------------------------------------------------------------------------*/
 .footnote {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
-
 .container-narrow > hr {
-  margin: 30px 0;
+    margin: 30px 0;
 }

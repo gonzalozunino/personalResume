@@ -1,32 +1,40 @@
+/* Text align xs
+------------------------------------------------------------------------*/
 .text-xs-left { text-align: left; }
 .text-xs-right { text-align: right; }
 .text-xs-center { text-align: center; }
 .text-xs-justify { text-align: justify; }
 
+/* Main
+------------------------------------------------------------------------*/
 #main {
     padding: 100px 0 50px 0;
   }
 
 .experiences, .abilities, .contact, .lead {
-  padding: 50px 0 60px 0; 
-}  
-
-@media (min-width: 992px) {
-  .profile {
-    padding: 50px 0 60px 0; 
-  }
-
-  .text-md-left { text-align: left; }
-  .text-md-right { text-align: right; }
-  .text-md-center { text-align: center; }
-  .text-md-justify { text-align: justify; }
+    padding: 50px 0 60px 0;
 }
 
-.section-title {  
+.section-title {
     text-transform: uppercase;
     color: #2c3d4f;
     font-weight: 800;
     letter-spacing: 5px;
     line-height: 60px;
     font-size: 40px;
+}
+
+@media (min-width: 992px) {
+    /* Main Desktop
+    ------------------------------------------------------------------------*/
+    .profile {
+        padding: 50px 0 60px 0;
+    }
+
+    /* Text align md
+    ------------------------------------------------------------------------*/
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
 }

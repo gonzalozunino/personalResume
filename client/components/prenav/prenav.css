@@ -20,8 +20,8 @@ a, a:hover, a:focus{
     display: none; 
 }
 br.clear { 
-    margin: 0px; 
-    padding: 0px; 
+    margin: 0;
+    padding: 0;
 }
 hr{
     margin: 10px 0;
@@ -32,18 +32,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #373432; 
     line-height: 1em; 
     font-weight: bold;
- }
+}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
     color: #111; 
 }
-/*
-h1 { font-size: 30px; }
-h2 { font-size: 24px; }
-h3 { font-size: 22px; }
-h4 { font-size: 18px; }
-h5 { font-size: 16px; }
-h6 { font-size: 14px; }
-*/
 p { 
     padding-bottom: 10px;
     line-height: 25px; 
@@ -58,7 +50,6 @@ p {
     background: rgba(0, 0, 0, 0.2);
      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
 }
-
 .info > h2{
     text-transform:uppercase;
     color: #FFFFFF;
@@ -135,14 +126,11 @@ p {
     .parallax .border {
         display: block;
         height: 2px;
-        margin-top: 30px;
-        margin-bottom: 30px;
         width: 100px;
         margin: 0 auto;
     }
-
     .parallax .outline {
-        background-color:none;
+        background-color:transparent;
         border:2px solid #FFFFFF;
         color:#FFFFFF;
         line-height:10px!important;
@@ -187,7 +175,6 @@ p {
         cursor: default;
         margin: 0 auto;
     }
-
     .info{
         text-align: center;
         margin-top: 50px;
@@ -214,7 +201,6 @@ p {
     .avatar-section img{
         margin: 0 auto;    
     }
-
     .avatar-section img {
         border: 10px solid #eff0f4;
         border-radius: 250px;
@@ -222,6 +208,4 @@ p {
         margin: 0 auto;
         width: 460px;
     }
-
-
 }
