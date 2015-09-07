@@ -8,6 +8,7 @@ body, ul > li > a {
     color: #7e878f;
     background-color: #FFFFFF; 
     font-weight: 300;
+    overflow-y: hidden;
 }
 a, a:hover, a:focus{ 
     text-decoration: none;
@@ -90,6 +91,11 @@ p {
 }
 
 @media (min-width: 992px) {
+    /* General Style
+    ------------------------------------------------------------------------*/
+    body {
+        overflow-y: initial;
+    }
     /* - Parallax
     ------------------------------------------------------------------------*/
     .parallax {
